@@ -5,77 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="news.js" defer></script>
-    <title>Home</title>
+    <title>Home - De Morgenstond</title>
 </head>
 <body>
     <header>
-        <section>
-            De Morgenstond  <!--krantnaam-->
-        </section>
+        <h1>De Morgenstond</h1>
         <nav>
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Home</a></li>
-                <li><a href="">Home</a></li>
-                <li><a href="">Home</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Home</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
-        <section class="mobile-toggle">
-            <button class="mob-toggle-btn" id="belangrijkNieuwsBtn">Belangrijk</button>
-            <button class="mob-toggle-btn mob-inactive-toggle-content" id="laatsteNieuwsBtn">Laatste Nieuws</button>
-        </section>
-        <section class="left-box">
-            <section class="top-story" id="top-story">
+        <div class="mob-toggle-btn-choice">
+            <button class="mob-toggle-btn mob-toggle-btn-active" id="mobToggleBtnBelangrijk">Belangrijk</button>
+            <button class="mob-toggle-btn mob-toggle-btn-inactive" id="mobToggleBtnLaatsteNieuws">Laatste Nieuws</button>
+        </div>
+        <section class="belangrijk-nieuws linker-content">
+            <article class="top-story">
                 <h2>Overstroming in Utopia</h2>
-                <img src="img/flood.jpg" alt="top story news">
-            </section>
-            <section>
-                <div class="left-double-box">
-                    <div class="left-double-box-content">
-                        <img src="img/meds.jpg" alt="medicatie" class="news-img"> 
-                        <div>
-                            <span class="right-border-span small-grey-txt">15:25</span>
-                            <span class="small-grey-txt">Binnenland</span>
-                        </div>
-                        <span>Hier tekst met omschrijving van het nieuws artikel, 4 zinnen</span>
+                <img src="img/flood.jpg" class="big-img">
+            </article>
+            <div class="double-box">
+                <article>
+                    <img src="img/meds.jpg" class="med-img">
+                    <span class="time">09:25</span>
+                    <span class="news-genre">Binnenland</span>
+                    <p class="news-description">Nederlandse drugs gaan als warme broodjes over de toonbank in het buitenland</p>
+                </article>
+                <article>
+                    <img src="img/yoda.jpg" class="med-img">
+                    <span class="time">10:55</span>
+                    <span class="news-genre">Buitenland</span>
+                    <p class="news-description">Anonieme yoda creatie van lego stukken maakt politiek statement tegen onderdrukking van groene mensen</p>
+                </article>
+            </div>
+            <article class="top-story">
+                <h2>Grote boodschap op Mars nu mogelijk</h2>
+                <img src="img/astronaut.jpg" class="big-img">
+            </article>
+            <div class="double-box">
+                <article>
+                    <img src="img/hands.jpg" class="med-img">
+                    <span class="time">09:25</span>
+                    <span class="news-genre">Tech</span>
+                    <p class="news-description">Gaan we hand in de hand de toekomst in met robots?</p>
+                </article>
+                <article>
+                    <img src="img/toilet.jpg" class="med-img">
+                    <span class="time">10:55</span>
+                    <span class="news-genre">Buitenland</span>
+                    <p class="news-description">Lange wachtrijen bij het toilet zeer schadelijk voor zowel mannen als vrouwen</p>
+                </article>
+            </div>
+            <div class="single-box">
+                <article>
+                    <img src="img/horseca.jpg" class="small-img">
+                    <div class="time-genre-wrapper">
+                        <span class="time">09:25</span>
+                        <span class="news-genre">Tech</span>
                     </div>
-                    <div class="left-double-box-content">
-                        <img src="img/meds.jpg" alt="medicatie" class="news-img"> 
-                    <span class="right-border-span small-grey-txt">15:25</span>
-                    <span class="small-grey-txt">Binnenland</span>
-                    <span>Hier tekst met omschrijving van het nieuws artikel, 4 zinnen</span>
-                    </div>
-                </div>
-                <div>
-                    <img src="">
-                    <span>12:05</span>
-                    <span>Financieel</span>
-                </div>
-            
-        </section>
-
-        <section class="right-box">
-            <section class="laatste-nieuws">
-                <h2>Laatste Nieuws</h2>
-                <ul>
-                    <li><span class="tijd">09.00</span> <a href="">link</a></li>
-                    <li><span class="tijd">09.00</span> <a href="">link</a></li>
-                    <li><span class="tijd">09.00</span> <a href="">link</a></li>
-                    <li><span class="tijd">09.00</span> <a href="">link</a></li>
-                    <li><span class="tijd">09.00</span> <a href="">link</a></li>
-                    <li><span class="tijd">09.00</span> <a href="">link</a></li>                    
-                </ul>
-            </section>
-            <section class="columns">
-                <h2>Columns</h2>
-                
-            </section>
-
-            </section>
+                </article>
+            </div>
         </section>
     </main>
+
+    <script src="news.js"></script>
 </body>
 </html>
