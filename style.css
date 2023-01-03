@@ -1,0 +1,115 @@
+/* INSIPIRATIE : 
+https://www.haarlemcityblog.nl/health-beauty/leukste-sportscholen-haarlem/  
+https://www.telegraaf.nl
+*/
+/*              UNIVERSELE OPMAAK               */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Montserrat,Helvetica,Arial,Lucida,sans-serif;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header > nav{
+    border-top: 2px solid #333;
+    border-bottom: 2px solid #333;
+    width: 80%;
+}
+header > nav > ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+header > nav > ul > li > a {
+    color:#333;
+    text-decoration: none;
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+.small-grey-txt{
+    color:rgb(75, 74, 74);
+    font-size: small;
+    font-weight: 700;
+}
+.left-box{
+    width: 100%;
+}
+.mobile-toggle{
+    width: 100%;
+    padding: 10px 0px;
+}
+.mob-toggle-btn{
+    width: 49%;
+    background: none;
+    border: none;
+    border-bottom: 2px black solid;
+    font-weight: 900;
+}
+.mob-inactive-toggle-content{
+    color: grey;
+    border-bottom: 2px grey solid;
+}
+/*             LINKER CONTENT            */
+.top-story{
+    width: 100%;
+    overflow: hidden;
+    border: 2px solid coral;
+}
+.top-story > img{
+    width: 100%;
+}
+.top-story > h2,p{
+    width: 65%;
+    position: absolute;
+    margin-left: 20px;
+    color:white;
+    text-shadow: 2px 2px black;
+}
+.top-story > h2{
+    margin-top: 10px;
+}
+.top-story > p{
+    margin-top: 150px;
+}
+.left-double-box{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid grey;
+    padding: 10px 0px;
+}
+.left-double-box-content{
+    padding: 6px;
+    border: 2px solid greenyellow;
+    width: 50%;
+    height: 200px;
+}
+.left-double-box-content:nth-child(1){
+    border-right: 2px solid grey;
+}
+.news-img{
+    width: 100%;
+}
+.right-border-span{
+    border-right: 2px solid grey;
+    padding-right: 4px;
+}
+/*             RECHTER CONTENT            */
+.right-box{
+    display: none;
+}
+
+
+
+
+/* 
+breakpoints zijn: 
+mob 375px 
+tablet 768px 
+laptop 1280px 
+desktop 1920px */
