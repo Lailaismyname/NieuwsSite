@@ -57,6 +57,16 @@ main{
 .double-box > article:nth-child(1){
     border-right: 1px solid grey;
 }
+/*          SPANS IN NEWS   */  
+.time-genre-wrapper{
+    display: flex;
+}
+.time-genre-wrapper > span{
+    padding: 0px 3px;
+}
+.time-genre-wrapper > span:nth-child(1){
+    border-right: 1px solid grey;
+}
 /*          MOB TOGGLE CHOICE       */
 .mob-toggle-btn-choice{
     display: flex;
