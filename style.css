@@ -1,4 +1,12 @@
-/*          GEIMPORTEERDE FONTS
+
+/*              KLEURENPALETTE      
+    Kombu Green         #3C493F
+    Xanadu              #7E8D85
+    Ash Gray            #B3BFB8
+    Mint Cream          #F0F7F4    
+    Magic Mint          #A2E3C4
+
+                    GEIMPORTEERDE FONTS
 font-family: 'Bebas Neue', cursive;
 font-family: 'Fleur De Leah', cursive;
 font-family: 'Julius Sans One', sans-serif;
@@ -28,15 +36,15 @@ header > nav > ul{
     width: 21rem;
     display: flex;
     justify-content: space-between;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
+    border-top: 2px solid #3C493F;
+    border-bottom: 2px solid #3C493F;
 }
 header > nav > ul > li{
     list-style: none;
 }
 header > nav > ul > li > a{
     text-decoration: none;
-    color: black;
+    color: #3C493F;
     font-family: 'Share Tech Mono', monospace;
 }
 /*          IMAGES      */
@@ -63,7 +71,8 @@ main{
 /*          SINGLE BOX CONTENT */
 .single-box{
  padding: 6px 0px;
- border-bottom: 1px solid grey;
+ border-bottom: 1px solid #B3BFB8;
+ color:#3C493F;
 }
 .news-title-small{
    font-size: 16px;
@@ -75,7 +84,7 @@ main{
     flex-direction: row;
     align-content: center;
     padding: 10px 0px;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid #B3BFB8;
 }
 .double-box > article{
     padding: 0px 3px;
@@ -85,17 +94,19 @@ main{
     align-items: center;
 }
 .double-box > article:nth-child(1){
-    border-right: 1px solid grey;
+    border-right: 1px solid #B3BFB8;
 }
 .double-box-title{
     font-size: 16px;
     font-weight: 100;
+    color:#3C493F;
 }
 /*          NIEUWSBRIEF     */
 .nieuwsbrief{
-    background: lavender;
+    background: #A2E3C4;
     display:flex;
     flex-direction: column;
+    color:#3C493F;
 }
 .nieuwsbrief-form{
     width: 90%;
@@ -106,12 +117,12 @@ main{
     padding: 3px 12px;
     border: none;
     text-align: center;
-    background: steelblue;
+    background: #3C493F;
     color: white;
     cursor: pointer;
 }
 .nieuwsbrief > a{
-    color: steelblue;
+    color: #3C493F;
     text-decoration: none;
     align-self: flex-end;
     padding: 3px 20px;
@@ -122,6 +133,7 @@ main{
 }
 .time-genre-wrapper > span{
     padding: 0px 3px;
+    color:#3C493F;
 }
 .time-genre-wrapper > span:nth-child(1){
     border-right: 1px solid grey;
@@ -137,6 +149,7 @@ main{
     width: 49%;
     background: none;
     border:none;
+    font-family: 'Share Tech Mono', monospace;
 }
 .mob-toggle-btn-inactive{
     color: grey;
@@ -155,9 +168,39 @@ main{
     display: flex;
     flex-direction: column;
 }
+/*          FOOTER      */
+footer{
+    background: #3C493F;
+    color: white;
+    text-shadow: black 1px 1px;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 12px;
+}
+footer > h1{
+    text-align: center;
+    font-family: 'Fleur De Leah', cursive;
+    letter-spacing: 3px;
+    font-size: 32px;
+}
+footer > a{
+    cursor: pointer;
+    color: white;
+}
 /* 
 breakpoints zijn: 
 mob 375px 
 tablet 768px 
 laptop 1280px 
 desktop 1920px */
+
+/* TODO: 
+
+laatste nieuws content maken. 
+met javascript buttons werkend maken zodat switch tussen belangrijk en laatste nieuws
+bedenken hoe mob navbar eruit gaat zien.
+
+tablet versie maken
+laptop versie maken
+desktop versie maken
+
+*/
