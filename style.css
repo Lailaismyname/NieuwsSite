@@ -91,6 +91,31 @@ main{
     font-size: 16px;
     font-weight: 100;
 }
+/*          NIEUWSBRIEF     */
+.nieuwsbrief{
+    background: lavender;
+    display:flex;
+    flex-direction: column;
+}
+.nieuwsbrief-form{
+    width: 90%;
+}
+.nieuwsbrief-btn{
+    height: 30px;
+    letter-spacing: 1px;
+    padding: 3px 12px;
+    border: none;
+    text-align: center;
+    background: steelblue;
+    color: white;
+    cursor: pointer;
+}
+.nieuwsbrief > a{
+    color: steelblue;
+    text-decoration: none;
+    align-self: flex-end;
+    padding: 3px 20px;
+}
 /*          SPANS IN NEWS   */  
 .time-genre-wrapper{
     display: flex;
