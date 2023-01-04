@@ -1,10 +1,31 @@
-/*
+/*          GEIMPORTEERDE FONTS
+font-family: 'Bebas Neue', cursive;
+font-family: 'Fleur De Leah', cursive;
+font-family: 'Julius Sans One', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Playfair Display SC', serif;
+font-family: 'Share Tech Mono', monospace;
+font-family: 'Six Caps', sans-serif;
 */
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Bebas+Neue&family=Fleur+De+Leah&family=Julius+Sans+One&family=Montserrat&family=Playfair+Display+SC&family=Share+Tech+Mono&family=Six+Caps&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
 /*          NAVBAR      */
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 header > h1{
     text-align: center;
+    font-family: 'Fleur De Leah', cursive;
+    letter-spacing: 3px;
 }
 header > nav > ul{
+    width: 21rem;
     display: flex;
     justify-content: space-between;
     border-top: 2px solid black;
@@ -16,6 +37,7 @@ header > nav > ul > li{
 header > nav > ul > li > a{
     text-decoration: none;
     color: black;
+    font-family: 'Share Tech Mono', monospace;
 }
 /*          IMAGES      */
 .small-img{
@@ -30,6 +52,7 @@ header > nav > ul > li > a{
 /*          LAYOUT           */
 main{
     padding: 5px 5px;
+    font-family: 'Bebas Neue', cursive;
 }
 /*          TOP STORY       */
 .top-story > h2{
@@ -38,7 +61,14 @@ main{
     text-shadow: black 1px 0 10px;
 }
 /*          SINGLE BOX CONTENT */
-
+.single-box{
+ padding: 6px 0px;
+ border-bottom: 1px solid grey;
+}
+.news-title-small{
+   font-size: 16px;
+   font-weight: 100;
+}
 /*         DOUBLE BOX CONTENT   */
 .double-box{
     display: flex;
@@ -56,6 +86,10 @@ main{
 }
 .double-box > article:nth-child(1){
     border-right: 1px solid grey;
+}
+.double-box-title{
+    font-size: 16px;
+    font-weight: 100;
 }
 /*          SPANS IN NEWS   */  
 .time-genre-wrapper{
@@ -87,7 +121,15 @@ main{
     color: black;
     border-bottom: 4px solid black;
 }
-
+/*          WRAPPERS        */
+.wrapper-vertical-content{
+    display: flex;
+    flex-direction: row;
+}
+.wrapper-horizontal-content{
+    display: flex;
+    flex-direction: column;
+}
 /* 
 breakpoints zijn: 
 mob 375px 
