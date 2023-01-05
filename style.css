@@ -245,6 +245,9 @@ footer > p,a{
     .hide-element{
         display:none;
     }
+    .wrapper{
+        flex-direction: column; /* NODIG? */
+    }
 }
 /*tablet 768px */
 @media screen and (min-width: 768px) {
@@ -253,7 +256,17 @@ footer > p,a{
     }
     .wrapper{
         display: flex;
-        flex-direction: row;
+        justify-content: center;
+        flex-direction:row;
+    }
+    .linker-content{
+        width: 40%;
+    }
+    .rechter-content{
+        width: 20%;
+    }
+    .mob-toggle-btn-choice{
+        display:none;
     }
 }
 
@@ -266,6 +279,7 @@ desktop 1920px */
 laatste nieuws content maken. DONE moet alleen nog iets van columns bij ofzo
 met javascript buttons werkend maken zodat switch tussen belangrijk en laatste nieuws !!!DONE
 bedenken hoe mob navbar eruit gaat zien.
+NOTE als scherm resize naar boven 768px verstoort de laytout ineens
 
 tablet versie maken
 laptop versie maken
