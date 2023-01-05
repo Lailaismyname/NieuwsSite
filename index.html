@@ -10,7 +10,7 @@
 <body>
     <header>
         <h1>De Morgenstond</h1>
-        <nav>
+        <nav id="bigScreenMenu">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">wat</a></li>
@@ -18,14 +18,18 @@
                 <li><a href="#">doen?</a></li>
             </ul>
         </nav>
+        <nav id="smallScreenMenu">
+            <!-- hoe ga ik deze menu doen?-->
+        </nav>
     </header>
 
     <main>
-        <div class="mob-toggle-btn-choice">
-            <button class="mob-toggle-btn mob-toggle-btn-active" id="mobToggleBtnBelangrijk">Belangrijk</button>
+        <div class="mob-toggle-btn-choice" id="mob-toggle-btn-choice">
+            <button class="mob-toggle-btn mob-toggle-btn-active" id="mobToggleBtnBelangrijk">Belangrijk Nieuws</button>
             <button class="mob-toggle-btn mob-toggle-btn-inactive" id="mobToggleBtnLaatsteNieuws">Laatste Nieuws</button>
         </div>
-        <section class="belangrijk-nieuws linker-content">
+        <div class="wrapper">
+        <section id="belangrijkNieuws" class="belangrijk-nieuws linker-content">
             <article class="top-story">
                 <h2>Overstroming in Utopia</h2>
                 <img src="img/flood.jpg" class="big-img">
@@ -90,7 +94,7 @@
                             <span class="time">15:03</span>
                             <span class="news-genre">Financieel</span>
                         </div>
-                        <h2 class="news-title-small">Wanneer dalen die gasprijzen nou ff?</h2>
+                        <h2 class="news-title-small">De gasprijzen dalen maar dat zie je niet terug op je rekening <s>vanwege hoge winsten</s></h2>
                     </div>
                 </article>
             </div>
@@ -128,6 +132,72 @@
                 <a href="#">Privacybeleid</a>
             </div>
         </section>
+        <section id="laatsteNieuws" class="laatste-nieuws rechter-content hide-element">
+            <h2>Laatste Nieuws</h2>
+            <ul class="news-item-list">
+                <li class="news-item">
+                    <span class="time">13:23</span>
+                    <h3 class="rechter-title">Tweeling panda geboren in DierenPark Amersfoort</h3>
+                    <img src="img/panda.jpg" alt="nieuws tumbnail" class="right-content-img">
+                </li>
+                <li class="news-item">
+                    <span class="time">12:17</span>
+                    <h3 class="rechter-title">Man (77) aangehouden na vondst dode man in Sint Pancras</h3>
+                    <img src="img/dark-street.jpg" alt="nieuws tumbnail" class="right-content-img">
+                </li>
+                <li class="news-item">
+                    <span class="time">11:48</span>
+                    <h3 class="rechter-title">Vijfde Nederlander opgepakt voor plan ontvoeren minister België</h3>
+                    <img src="img/handboeien.jpg" alt="nieuws tumbnail" class="right-content-img">
+                </li>
+                <li class="news-item">
+                    <span class="time">11:30</span>
+                    <h3 class="rechter-title">Historische vloerschildering ontdekt in het hartje van Nederland</h3>
+                    <img src="img/anderhalf.jpg" alt="nieuws tumbnail" class="right-content-img">
+                </li>
+                <li class="news-item">
+                    <span class="time">10:08</span>
+                    <h3 class="rechter-title">Scholieren houden een bbg dat uitloopt in een gigantische brand</h3>
+                    <img src="img/brandweer.jpg" alt="nieuws tumbnail" class="right-content-img">
+                </li>
+                <li class="news-item">
+                    <span class="time">09:42</span>
+                    <h3 class="rechter-title">Verdachte bijt agenten in been en arm tijdens politie inval</h3>
+                    <img src="img/politieInval.jpg" alt="nieuws tumbnail" class="right-content-img">
+                </li>
+                <li class="news-item">
+                    <span class="time">08:33</span>
+                    <h3 class="rechter-title">Bekende race coureur wint wedstrijd, iedereen blij</h3>
+                    <img src="img/Race_pic.jpg" alt="nieuws tumbnail" class="right-content-img">
+                </li>
+                <li class="news-item">
+                    <span class="time">07:11</span>
+                    <h3 class="rechter-title">Man (46) probeert inflatie in eentje te bestrijden: deelt aan hele stad kapsalon's uit</h3>
+                    <img src="img/Kapsalon_dutch_meal.jpg" alt="nieuws tumbnail" class="right-content-img">
+                </li>
+                <li class="news-item">
+                    <span class="time">08:33</span>
+                    <h3 class="rechter-title">Putin hoest en proest in speech en blijkbaar is dat nieuwswaardig</h3>
+                    <img src="img/putin.jpg" alt="nieuws tumbnail" class="right-content-img">
+                </li>
+                <li class="news-item">
+                    <span class="time">06:55</span>
+                    <h3 class="rechter-title">Meer geld naar het koningshuis, Willem zegt doen!</h3>
+                    <img src="img/wimpie.jpg" alt="nieuws tumbnail" class="right-content-img">
+                </li>
+                <li class="news-item">
+                    <span class="time">06:03</span>
+                    <h3 class="rechter-title">Groene straatje in Haarlem genomineerd als mooiste straatje van Nederland</h3>
+                    <img src="img/mooistestraatje.jpg" alt="nieuws tumbnail" class="right-content-img">
+                </li>
+                <li class="news-item">
+                    <span class="time">05:58</span>
+                    <h3 class="rechter-title">Volgens peilingen is Germaine de Randamie een leuk mens</h3>
+                    <img src="img/germainederandamie.jpg" alt="nieuws tumbnail" class="right-content-img">
+                </li>
+            </ul>
+        </section>
+    </div>
     </main>
     <footer>
         <h1>De Morgenstond</h1>

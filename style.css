@@ -21,7 +21,11 @@ font-family: 'Six Caps', sans-serif;
     margin: 0px;
     box-sizing: border-box;
 }
-/*          NAVBAR      */
+/*                                      HIDE ELEMENT                */
+.hide-element{
+    display: none;
+}
+/*                                      NAVBAR      */
 header{
     display: flex;
     flex-direction: column;
@@ -47,7 +51,11 @@ header > nav > ul > li > a{
     color: #3C493F;
     font-family: 'Share Tech Mono', monospace;
 }
-/*          IMAGES      */
+/*                                      IMAGES      */
+.right-content-img{
+    width: 75px;
+    border-radius: 3px;
+}
 .small-img{
     width: 125px;
 }
@@ -57,18 +65,18 @@ header > nav > ul > li > a{
 .big-img{
     width: 100%;
 }
-/*          LAYOUT           */
+/*                                      LAYOUT           */
 main{
     padding: 5px 5px;
     font-family: 'Bebas Neue', cursive;
 }
-/*          TOP STORY       */
+/*                                      TOP STORY       */
 .top-story > h2{
     position: absolute;
     color: white;
     text-shadow: black 1px 0 10px;
 }
-/*          SINGLE BOX CONTENT */
+/*                                      SINGLE BOX CONTENT */
 .single-box{
  padding: 6px 0px;
  border-bottom: 1px solid #B3BFB8;
@@ -78,7 +86,7 @@ main{
    font-size: 16px;
    font-weight: 100;
 }
-/*         DOUBLE BOX CONTENT   */
+/*                                       DOUBLE BOX CONTENT   */
 .double-box{
     display: flex;
     flex-direction: row;
@@ -101,7 +109,7 @@ main{
     font-weight: 100;
     color:#3C493F;
 }
-/*          NIEUWSBRIEF     */
+/*                                      NIEUWSBRIEF     */
 .nieuwsbrief{
     background: #A2E3C4;
     display:flex;
@@ -127,7 +135,7 @@ main{
     align-self: flex-end;
     padding: 3px 20px;
 }
-/*          SPANS IN NEWS   */  
+/*                                      SPANS IN NEWS   */  
 .time-genre-wrapper{
     display: flex;
 }
@@ -136,9 +144,48 @@ main{
     color:#3C493F;
 }
 .time-genre-wrapper > span:nth-child(1){
-    border-right: 1px solid grey;
+    border-right: 1px solid #3C493F;
 }
-/*          MOB TOGGLE CHOICE       */
+/*                                      RECHTER CONTENT          */
+.rechter-content{
+    display: flex;
+    flex-direction: column;
+}
+.laatste-nieuws > h2{
+    letter-spacing: 1.5px;
+    font-size: 16px;
+    color:#3C493F;
+}
+.news-item-list > li > span{
+    font-size: 12px;
+    padding: 0px 5px;
+    letter-spacing: 1px;
+    font-weight: 100;
+    color:#3C493F;
+}
+.news-item-list > li > h3{
+    font-size: 14px;
+    font-weight: 100;
+    color:#3C493F;
+    padding: 0px 5px;
+}
+.news-item-list > li{
+    height: 70px;
+    border-bottom: 1px solid #3C493F;
+    display: flex;
+    align-items: center;
+}
+.news-item-list > li:nth-child(1){
+    border-top: 1px solid #3C493F;
+}
+.news-item-list{
+    /* wat ging ik hiermee doen ook alweer?*/
+}
+.news-item{
+    display: flex;
+    justify-content: space-between;
+}
+/*                                     MOB TOGGLE CHOICE       */
 .mob-toggle-btn-choice{
     display: flex;
     flex-direction: row;
@@ -146,20 +193,20 @@ main{
     padding: 3px;
 }
 .mob-toggle-btn{
+    font-family: 'Bebas Neue', cursive;
     width: 49%;
     background: none;
     border:none;
-    font-family: 'Share Tech Mono', monospace;
 }
 .mob-toggle-btn-inactive{
-    color: grey;
-    border-bottom: 4px solid grey;
+    color: #B3BFB8;
+    border-bottom: 4px solid #B3BFB8;
 }
 .mob-toggle-btn-active{
-    color: black;
-    border-bottom: 4px solid black;
+    color:  #3C493F;
+    border-bottom: 4px solid #3C493F;
 }
-/*          WRAPPERS        */
+/*                                      WRAPPERS        */
 .wrapper-vertical-content{
     display: flex;
     flex-direction: row;
@@ -168,35 +215,56 @@ main{
     display: flex;
     flex-direction: column;
 }
-/*          FOOTER      */
+/*                                      FOOTER      */
 footer{
     background: #3C493F;
     color: white;
     text-shadow: black 1px 1px;
     font-family: 'Share Tech Mono', monospace;
     font-size: 12px;
+    display: flex;
+    flex-direction: column;
 }
 footer > h1{
-    text-align: center;
+    text-align: left;
     font-family: 'Fleur De Leah', cursive;
     letter-spacing: 3px;
     font-size: 32px;
+    padding: 6px 3px;
 }
 footer > a{
     cursor: pointer;
     color: white;
 }
-/* 
-breakpoints zijn: 
-mob 375px 
-tablet 768px 
+footer > p,a{
+    padding: 6px 3px;
+}
+/*                                      BREAKPOINTS                 */
+/* 375px */
+@media screen and (max-width: 767px) {
+    .hide-element{
+        display:none;
+    }
+}
+/*tablet 768px */
+@media screen and (min-width: 768px) {
+    .hide-element{
+        display:flex;
+    }
+    .wrapper{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+/*
 laptop 1280px 
 desktop 1920px */
 
 /* TODO: 
 
-laatste nieuws content maken. 
-met javascript buttons werkend maken zodat switch tussen belangrijk en laatste nieuws
+laatste nieuws content maken. DONE moet alleen nog iets van columns bij ofzo
+met javascript buttons werkend maken zodat switch tussen belangrijk en laatste nieuws !!!DONE
 bedenken hoe mob navbar eruit gaat zien.
 
 tablet versie maken
