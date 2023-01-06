@@ -92,7 +92,6 @@ font-family: 'Six Caps', sans-serif;
 /*                                      LAYOUT           */
 main{
     padding: 0px 5px;
-    padding-top: 100px;
     font-family: 'Bebas Neue', cursive;
 }
 /*                                      COLUMN           */
@@ -320,6 +319,9 @@ footer > p,a{
     .hide-element{
         display:flex;
     }
+    main{
+        padding-top:50px;
+    }
     .wrapper{
         display: flex;
         justify-content: center;
@@ -352,6 +354,7 @@ footer > p,a{
     main{
         display: flex;
         justify-content: center;
+        padding-top: 100px;
     }
     .wrapper{
         display:flex;
