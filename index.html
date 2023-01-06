@@ -8,18 +8,25 @@
     <title>Home - De Morgenstond</title>
 </head>
 <body>
-    <header>
+    <header class="smallScreenNav">
+        <ul>
+            <li><h1>De Morgenstond</h1></li>
+            <li><img src="img/favicons/menu-burger.png" alt="Navigatie menu logo"></li>
+        </ul>
+    </header>
+
+    <header class="bigScreenNav">
         <h1>De Morgenstond</h1>
         <nav id="bigScreenMenu">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">wat</a></li>
-                <li><a href="#">hier</a></li>
-                <li><a href="#">doen?</a></li>
+                <li><a href="#" class="active-page">Home</a></li>
+                <li><a href="#">Nieuws</a></li>
+                <li><a href="#">Sport</a></li>
+                <li><a href="#">Entertainment</a></li>
+                <li><a href="#">Financieel</a></li>
+                <li><a href="#">Binnenland</a></li>
+                <li><a href="#">Buitenland</a></li>
             </ul>
-        </nav>
-        <nav id="smallScreenMenu">
-            <!-- hoe ga ik deze menu doen?-->
         </nav>
     </header>
 
@@ -31,7 +38,7 @@
         <div class="wrapper">
         <section id="belangrijkNieuws" class="belangrijk-nieuws linker-content">
             <article class="top-story">
-                <h2>Overstroming in Utopia</h2>
+                <h2 class="top-story-title">Overstroming in Utopia</h2>
                 <img src="img/flood.jpg" class="big-img">
             </article>
             <div class="double-box">
@@ -59,9 +66,9 @@
             <div class="nieuwsbrief">
                 <h2>Nieuwsbrief</h2>
                 <p>Vind jij nieuws ook zo leuk? Schrijf je in en wij spammen je inbox met onnodige mailtjes</p>
-                <div class="wrapper-vertical-content">
+                <div class="wrapper-vertical-content nieuwsbrief-wrapper">
                     <input type="text" name="nieuwsbrief" class="nieuwsbrief-form" placeholder="Typ uw e-mailadress">
-                    <button class="nieuwsbrief-btn" id="nieuwsbriefAanmeldBtn">Inschrijven<button>
+                    <button class="nieuwsbrief-btn" id="nieuwsbriefAanmeldBtn">Inschrijven</button>
                 </div>
                 <a href="#">Privacybeleid</a>
             </div>
