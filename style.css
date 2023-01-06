@@ -81,23 +81,56 @@ font-family: 'Six Caps', sans-serif;
     width: 125px;
 }
 .med-img{
-    width: 96%;
+    width: 90%;
 }
 .big-img{
     width: 100%;
 }
+.potret-foto{
+    width: 46px;
+}
 /*                                      LAYOUT           */
 main{
-    padding: 5px 5px;
+    padding: 0px 5px;
+    padding-top: 100px;
     font-family: 'Bebas Neue', cursive;
 }
-/*                                      TOP STORY       */
+/*                                      COLUMN           */
+.column-title{
+    padding: 20px 0px 0px 0px;
+}
+.column > li{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    font-weight: 100;
+}
+.column > li > div > span{
+    color: #3C493F;
+    font-size: 14px;
+}
+.column-box-1{
+    width: 15%;
+}
+.column-box-2{
+    display: flex;
+    width: 85%;
+}
+.column-span-1{
+    width: 80%;
+}
+.column-span-2{
+    width: 20%;
+}
+/*                                      TOP STORY        */
 .top-story > h2{
     position: absolute;
     color: white;
-    text-shadow: black 1px 0 10px;
+    text-shadow: black 1px 1px;
     margin-left: 25px;
     margin-top: 25px;
+    font-size: 24px;
+    
 }
 /*                                      SINGLE BOX CONTENT */
 .single-box{
@@ -108,6 +141,9 @@ main{
 .news-title-small{
    font-size: 16px;
    font-weight: 100;
+}
+.single-box-text-content{
+    padding: 0px 5px;
 }
 /*                                       DOUBLE BOX CONTENT   */
 .double-box{
@@ -122,7 +158,6 @@ main{
     width: 50%;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 .double-box > article:nth-child(1){
     border-right: 1px solid #B3BFB8;
@@ -131,6 +166,9 @@ main{
     font-size: 16px;
     font-weight: 100;
     color:#3C493F;
+}
+.double-box > article > img {
+    align-self: center;
 }
 /*                                      NIEUWSBRIEF     */
 .nieuwsbrief{
@@ -170,6 +208,10 @@ main{
     border-right: 1px solid #3C493F;
 }
 /*                                      RECHTER CONTENT          */
+.rechter-title{
+    text-align: left;
+    width: 75%;
+}
 .rechter-content{
     display: flex;
     flex-direction: column;
@@ -200,9 +242,6 @@ main{
 }
 .news-item-list > li:nth-child(1){
     border-top: 1px solid #3C493F;
-}
-.news-item-list{
-    /* wat ging ik hiermee doen ook alweer?*/
 }
 .news-item{
     display: flex;
@@ -303,6 +342,9 @@ footer > p,a{
     .bigScreenNav{
         display: flex;
     }
+    .top-story > h2{
+        font-size: 36px;
+    }
 }
 
 /*              laptop 1280px           */
@@ -316,13 +358,7 @@ footer > p,a{
         width: 80%;
         justify-content: center;
     }
+    .top-story > h2{
+        font-size: 48px;
+    }
 }
-
-/*              desktop 1920px           */
-
-/* TODO: 
-
-extra content toevoegen
-abboneer btn witruimte weghalen rechterkant van knop
-
-*/
